@@ -42,3 +42,8 @@ input[type="range"] {
   width: 80%;
   transition: 0.3s;
 }
+
+img {
+  max-width: 90%;
+  height: auto;
+}
