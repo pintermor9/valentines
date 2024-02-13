@@ -27,12 +27,12 @@
 
     ready.addEventListener("click", () => {
       if (range.value > 800) {
-        return location.assign("/5.html")
+        return location.assign("/valentines/5.html")
       }
       setInterval(() => {
         range.value++;
         if (range.value == 800) {
-          location.assign("/5.html")
+          location.assign("/valentines/5.html")
         }
       }, 5)
     })
