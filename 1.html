@@ -24,23 +24,14 @@
     const yes = document.querySelector("#yes");
 
     tbd.addEventListener("click", () => {
-      if (nah.style.opacity == "") {
-        nah.style.opacity = "50%"
-      }
+      nah.style.scale = 0.5;
       yes.style.scale = 2;
     });
 
     nah.addEventListener("click", () => {
-      nah.style.opacity = "0%";
-      const nah_clone = nah.cloneNode(true);
-      nah_clone.style.position = "absolute";
-      nah_clone.addEventListener("click", () => {
-        nah_clone.style.top = Math.random() * 95 + "%";
-        nah_clone.style.left = Math.random() * 95 + "%";
-      });
-      document.querySelector("body").appendChild(nah_clone);
-      nah_clone.style.opacity = "100%";
-      nah_clone.click();
+      nah.style.position = "absolute";
+      nah.style.top = Math.random() * 95 + "%";
+      nah.style.left = Math.random() * 95 + "%";
     });
   </script>
 </body>
